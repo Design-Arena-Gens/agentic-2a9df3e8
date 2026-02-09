@@ -1,0 +1,10 @@
+{
+  "buildCommand": "export PATH=\"$PATH:/tmp/flutter/bin\" && flutter build web --release",
+  "outputDirectory": "build/web",
+  "devCommand": "flutter run -d web-server --web-port $PORT",
+  "framework": null,
+  "installCommand": "if [ ! -d /tmp/flutter ]; then git clone https://github.com/flutter/flutter.git -b stable --depth 1 /tmp/flutter; fi && export PATH=\"$PATH:/tmp/flutter/bin\" && flutter config --no-analytics && flutter precache --web && flutter pub get",
+  "github": {
+    "silent": true
+  }
+}
